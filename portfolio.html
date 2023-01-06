@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="section-header portfolio">
+            <div class="container contain-header">
+                <nav class="nav">
+                    <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
+                    <ul class="site-nav">
+                        <li class="item"><a href="./index.html" class="link-nav">Studio</a></li>
+                        <li class="item after"><a href="./portfolio.html" class="link-nav portfolio">Portfolio</a></li>
+                        <li class="item"><a href="#" class="link-nav">Contacts</a></li>
+                    </ul>
+                    <div class="contact">
+                        <ul class="header-icons">
+                            <li class="item">
+                                <a href="malito:info@devstudio.com" class="primary-contact">
+                                    <svg class="icon-header" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-phone">
+                        
+                                        </use>
+                                    </svg>info@devstudio.com</a>
+                            </li>
+                            <li class="item">
+                                <a href="tel:+11(000)111-11-11" class="primary-contact">
+                                    <svg class="icon-header" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-envelop"></use>
+                                    </svg>+11 (000) 111-11-11</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <button type="button" class="icon-burger" data-menu-open>
+                    <svg class="menu-burger" width="32" height="22">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="mob-menu" data-menu>
+            <button type="button" class="mob-menu-btn" data-menu-close>
+                <svg class="modal-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+            <ul class="mob-nav">
+                <li class="mob-item"><a href="./index.html" class="link-nav-mob">Studio</a></li>
+                <li class="mob-item"><a href="./portfolio.html" class="link-nav-mob ">Portfolio</a></li>
+                <li class="mob-item"><a href="#" class="link-nav-mob contacts ">Contacts</a></li>
+            </ul>
+            <ul class="mob-contact">
+                <li class="mob-number-item">
+                    <a href="tel:+11(000)111-11-11" class="primary-contact-mob-numb">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mob-mail-item">
+                    <a href="malito:info@devstudio.com" class="primary-contact-mob-mail">info@devstudio.com</a>
+                </li>
+        
+            </ul>
+            <ul class="mob-menu-icons">
+                <li class="icon-ot mob">
+                    <a href="#" class="link-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon-ot mob">
+                    <a href="#" class="link-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon-ot mob">
+                    <a href="#" class="link-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon-ot mob">
+                    <a href="#" class="link-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="section portfolio">
+            <div class="container">
+            <h1 class="hidden">Portfolio</h1>
+            <ul class="buttons">
+                <li class="type">
+                    <button type="button" class="button primary">All</button>
+                </li>
+                <li class="type">
+                    <button type="button portfol" class="button secondary">Web Site</button>
+                </li>
+                <li class="type">
+                    <button type="button" class="button secondary">App</button>
+                </li>
+                <li class="type">
+                    <button type="button" class="button secondary">Design</button>
+                </li>
+                <li class="type">
+                    <button type="button" class="button secondary">Marketing</button>
+                </li>
+            </ul> 
+            <ul class="cards-portfolio">
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                        <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img1desk.jpg 1x, ./images/desk/img1desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img.tab-min.jpg 1x, ./images/tablet/img.tab@2x-min.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img1mob-min.jpg 1x, ./images/mobile/img1mob@2x-min.jpg 2x" media="(min-width: 480px)">
+                                <img src="./images/mobile/img1mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Banking App Interface Concept</h2>
+                            <p class="subtitle-text">App</p>
+                        </div>
+                    </a>
+                </li>
+                </li>
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                    <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img2desk.jpg 1x, ./images/desk/img2desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img2tab-min.jpg 1x, ./images/tablet/img2tab@2x-min.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img2mob-min.jpg 1x, ./images/mobile/img2mob@2x-min.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./images/mobile/img2mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+                                Fruit Ecommerce App ·
+                                Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Cashless Payment</h2>
+                            <p class="subtitle-text">Marketing</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                    <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img3desk.jpg 1x, ./images/desk/img3desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img3tab-min.jpg 1x, ./images/tablet/img3tab@2x-min.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img3mob-min.jpg 1x, ./images/mobile/img3mob@2x-min.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./images/mobile/img3mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Meditaion App</h2>
+                            <p class="subtitle-text">App</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                        <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img4desk.jpg 1x, ./images/desk/img4desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img4tab-min.jpg 1x, ./images/tablet/img4tab@2x-min.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img4mob-min.jpg 1x, ./images/mobile/img4mob@2x-min.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./images/mobile/img4mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Taxi Service</h2>
+                            <p class="subtitle-text">Marketing</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                        <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img5desk.jpg 1x, ./images/desk/img5desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img5tab-min.jpg 1x, ./images/tablet/img5tab@2x-min.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img5mob-min.jpg 1x, ./images/mobile/img5mob@2x-min.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./images/mobile/img5mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Screen Illustrations</h2>
+                            <p class="subtitle-text">Design</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                        <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img6desk.jpg 1x, ./images/desk/img6desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img6tab-min.jpg 1x, ./images/tablet/img6tab@2x-min.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img6mob-min.jpg 1x, ./images/mobile/img6mob@2x-min.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./images/mobile/img6mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Online Courses</h2>
+                            <p class="subtitle-text">Marketing</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                        <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img7desk-min.jpg 1x, ./images/desk/img7desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img7tab-min.jpg 1x, ./images/tablet/img7tab@2x-min.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img7mob-min.jpg 1x, ./images/mobile/img7mob@2x-min.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./images/mobile/img7mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Instagram Stories Concept</h2>
+                            <p class="subtitle-text">Design</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                        <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img8desk.jpg 1x, ./images/desk/img8desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img8tab-min.jpg 1x, ./images/tablet/img8tab@2x-min.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img8mob-min.jpg 1x, ./images/mobile/img8mob@2x-min.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./images/mobile/img8mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Organic Food</h2>
+                            <p class="subtitle-text">Web Site</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-portfolio">
+                    <a href="#" class="portfolio-unit">
+                        <div class="portfolio-img">
+                            <picture>
+                                <source srcset="./images/desk/img9desk.jpg 1x, ./images/desk/img9desk2x-min.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/img9tab-min.jpg 1x, ./images/tablet/img9tab@2x-min.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/mobile/img9mob-min.jpg 1x, ./images/mobile/img9mob@2x-min.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <img src="./images/mobile/img9mob-min.jpg" alt="banking app interface concept">
+                            </picture>
+                            <p class="overlei">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            Cloud Storage App</p>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2 class="subtitle-portfolio">Fresh Coffee</h2>
+                            <p class="subtitle-text">Web Site</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container foot">
+            <div class="footerLogotipe">
+                <a href="./index.html" class="logo-footer"><span class="web-footer">Web</span>Studio</a>
+                <p class="footer-text">Increase the flow of customers and<br>sales for your business with
+                    digital<br>marketing & growth solutions.
+                </p>
+            </div>
+            <div class="networks">
+                <h4 class="networks-title">Social media</h4>
+                <ul class="networks-list">
+                    <li class="networks-icon">
+                        <a href="#" class="networksIconLink">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="networks-icon">
+                        <a href="#" class="networksIconLink">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="networks-icon">
+                        <a href="#" class="networksIconLink">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="networks-icon">
+                        <a href="#" class="networksIconLink">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <p class="media-title">Subscribe</p>
+                <form class="form-footer">
+                    <lable class="subscribe-form">
+                        <input type="email" name="mail" id="mail" class="subscribe-mail" placeholder="E-mail" />
+                    </lable>
+                    <button type="submit" class="btn-subscribe">Subscribe
+                        <svg class="iconSend" width="24" height="20">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/mob-menu.js"></script>
+</body>
+</html>
