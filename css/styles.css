@@ -202,9 +202,11 @@ img {
     }
     .item.mail {
         margin-bottom: 4px;
+    }
+    .primary-contact.maile {
         padding-top: 24px;
     }
-    .item.namber {
+    .primary-contact.namber {
         padding-bottom: 10px;
     }
 }
@@ -455,6 +457,7 @@ img {
  .modal-close-btn {
      position: absolute;
      display: flex;
+     outline: transparent;
 
      justify-content: center;
      align-items: center;
@@ -472,13 +475,20 @@ img {
 
      padding: 0;
 
-     transition: var(--time-distribution);
+     transition: background var(--time-distribution);
  }
+
 
  .modal-close-btn:hover,
  .modal-close-btn:focus {
+    background: var(--focus-button);
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    fill: var(--white);
  }
+ .modal-icon {
+    transition: fill var(--time-distribution);
+ }
+
 
  .form-application {
      display: flex;
@@ -524,6 +534,7 @@ img {
 
  .input {
      display: block;
+     outline: transparent;
 
      width: 360px;
      height: 40px;
@@ -664,15 +675,15 @@ img {
 .icon-burger {
 position: absolute;
 top: 18px;
-right: 0;
+right: 8px;
 
 
-    background-color: transparent;
-    border: none;
+background-color: transparent;
+border: none;
 
-    padding: 0;
-    line-height: 0;
-    margin-left: auto;
+padding: 0;
+line-height: 0;
+margin-left: auto;
 }
 .menu-burger {
     fill: var(--navy-biue);
@@ -706,6 +717,12 @@ right: 0;
     pointer-events: none;
 
     transition: opacity var(--time-distribution), visibility var(--time-distribution);
+}
+
+@media screen and (min-width: 768px) {
+    .mob-menu {
+        display: none;
+    }
 }
 
 .mob-menu.is-open {
@@ -804,11 +821,19 @@ right: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    outline: transparent;
 
     padding: 0;
 
-    transition: box-shadow var(--time-distribution);
+    transition: background var(--time-distribution);
 }
+.mob-menu-btn:hover,
+.mob-menu-btn:focus {
+    background: var(--focus-button);
+    fill: var(--white);
+
+}
+
 .mob-menu-icons {
     display: flex;
 
@@ -1381,6 +1406,7 @@ right: 0;
 
 
 .subscribe-mail {
+    outline: transparent;
     padding-left: 16px;
 
     width: 100%;
