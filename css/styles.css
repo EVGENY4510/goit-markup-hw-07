@@ -766,6 +766,8 @@ margin-left: auto;
         transition: color var(--time-distribution);
 }
 .primary-contact-mob-mail {
+    text-decoration: none;
+
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 600;
